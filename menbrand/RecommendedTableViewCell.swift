@@ -12,6 +12,9 @@ class RecommendedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageViewIcon: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelIntro: UILabel!
+    @IBOutlet weak var labelCreateDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

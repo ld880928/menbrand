@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecommendedViewController: UIViewController {
+class RecommendedViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var infoTableView: UITableView!
     var infoData:NSArray?
@@ -79,6 +79,10 @@ class RecommendedViewController: UIViewController {
         
         cell.labelTitle.text = item.objectForKey("node_title") as? String
         
+        cell.labelIntro.text = item.objectForKey("introduction") as? String
+        
+        cell.labelCreateDate.text = item.objectForKey("node_created") as? String
+        
         return cell;
     }
 
@@ -87,6 +91,10 @@ class RecommendedViewController: UIViewController {
         self.performSegueWithIdentifier("RecommendedDetailSegue", sender: item)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100.0
     }
     
     // MARK: - Navigation

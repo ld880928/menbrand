@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetViewController: UIViewController {
+class SetViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var infoTableView: UITableView!
 
@@ -26,7 +26,7 @@ class SetViewController: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("SetTableViewCell") as SetTableViewCell
-
+        
         switch indexPath.row {
         case 0:
             cell.labelTitle.text = "版权信息"
@@ -65,6 +65,11 @@ class SetViewController: UIViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
+    /*
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60.0
+    }
+    */
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation

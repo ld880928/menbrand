@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class NewsViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
 
     @IBOutlet weak var infoTableView: UITableView!
     
@@ -69,6 +69,10 @@ class NewsViewController: UIViewController {
         
         cell.labelTitle.text = item.objectForKey("node_title") as? String
         
+        cell.labelIntro.text = item.objectForKey("introduction") as? String
+        
+        cell.labelCreateDate.text = item.objectForKey("node_created") as? String
+        
         return cell;
     }
 
@@ -77,6 +81,10 @@ class NewsViewController: UIViewController {
         self.performSegueWithIdentifier("NewsDetailSegue", sender: item)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100.0
     }
     
     // MARK: - Navigation
