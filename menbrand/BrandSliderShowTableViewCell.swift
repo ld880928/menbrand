@@ -34,6 +34,8 @@ class BrandSliderShowTableViewCell: UITableViewCell {
             
             let imageURLString = images.objectAtIndex(0) as String
             
+            imageView_.contentMode = UIViewContentMode.ScaleAspectFill
+            imageView_.clipsToBounds = true
             imageView_.sd_setImageWithURL(NSURL(string: imageURLString))
             
             self.infoScrollView.addSubview(imageView_)

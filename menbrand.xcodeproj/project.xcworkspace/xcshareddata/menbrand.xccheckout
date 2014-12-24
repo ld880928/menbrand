@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>75E08C3E-F308-4B85-AFF8-9ABEA3EBAABE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>menbrand</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E03FD2602958D9CE5EF2A820952660A7AA54512</key>
+		<string>https://github.com/ld880928/menbrand.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>menbrand.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E03FD2602958D9CE5EF2A820952660A7AA54512</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ld880928/menbrand.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E03FD2602958D9CE5EF2A820952660A7AA54512</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E03FD2602958D9CE5EF2A820952660A7AA54512</string>
+			<key>IDESourceControlWCCName</key>
+			<string>men</string>
+		</dict>
+	</array>
+</dict>
+</plist>
