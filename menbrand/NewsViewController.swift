@@ -71,7 +71,15 @@ class NewsViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         
         cell.labelIntro.text = item.objectForKey("introduction") as? String
         
-        cell.labelCreateDate.text = item.objectForKey("node_created") as? String
+        let createTimeString = item.objectForKey("node_created") as? String
+        let createTimeInterval = NSString(string: createTimeString!).doubleValue
+        let createTime = NSDate(timeIntervalSince1970: createTimeInterval)
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss" // superset of OP's format
+        let str = dateFormatter.stringFromDate(createTime)
+        
+        cell.labelCreateDate.text = str
         
         return cell;
     }
